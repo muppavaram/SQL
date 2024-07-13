@@ -1,0 +1,9 @@
+---Create Database Command
+Create Database BigDataBootCamp;
+
+Create Database Test;
+
+
+---Get the List of Exisiting Databases
+
+Show Databases;
