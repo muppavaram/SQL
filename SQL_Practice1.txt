@@ -4,6 +4,24 @@ Create Database BigDataBootCamp;
 Create Database Test;
 
 
----Get the List of Exisiting Databases
+---Get the List of Existing Databases
 
 Show Databases;
+
+---Command to Drop a Database
+
+Drop Database Test;
+Show Databases;
+
+
+---Go inside a particular DB
+
+use BigDataBootCamp;
+
+---Command to Create Table
+
+Create table if not exists employee
+(
+    id int, 
+    name VARCHAR(50)
+);
