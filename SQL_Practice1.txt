@@ -17,3 +17,13 @@ create table if not exists employee
     id int,
     name VARCHAR(50)
 );
+
+Data Types in SQL:
+1. String Data Type: Any column that holds string data type we use
+    a. CHAR(n): All characters whose ASCII value is between 0 to 255
+    b. VARCHAR(n): All UNICODE characters as well and ASCII ranges from 0 to 65535
+2. Numeric Data Type: 
+    a. Int(n): Holds integer values ranging from -2147483648 to 2147483647 
+    b. BIGINT(n): Holds more larger values of positive or negative integers
+    c. Decimal(size,d): Eg: 864.532 size is 6 and d is 3 no of values after decimal
+    d. Date & Time data types: Date (YYYY-MM--DD) and time stamp stores (YYYY--MM--DD hh:mm:ss)
