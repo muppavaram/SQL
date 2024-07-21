@@ -1,27 +1,19 @@
 ---Create Database Command
-Create Database BigDataBootCamp;
+create database bigdatadb;
+create database testdb;
 
-Create Database Test;
+---Get the list of existing databases
+show databases;
 
+---Command to Drop Database
+drop database testdb;
 
----Get the List of Existing Databases
+---Using a DB command
+use bigdatadb;
 
-Show Databases;
-
----Command to Drop a Database
-
-Drop Database Test;
-Show Databases;
-
-
----Go inside a particular DB
-
-use BigDataBootCamp;
-
----Command to Create Table
-
-Create table if not exists employee
+---Create a Table Command
+create table if not exists employee
 (
-    id int, 
+    id int,
     name VARCHAR(50)
 );
