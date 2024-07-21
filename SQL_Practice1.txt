@@ -27,3 +27,11 @@ Data Types in SQL:
     b. BIGINT(n): Holds more larger values of positive or negative integers
     c. Decimal(size,d): Eg: 864.532 size is 6 and d is 3 no of values after decimal
     d. Date & Time data types: Date (YYYY-MM--DD) and time stamp stores (YYYY--MM--DD hh:mm:ss)
+
+---Schema: Logical representation of the table that gives details of the table coulmns and data types
+
+---Command to list down all the tables in a database
+show tables;
+
+---If table already exists, to check the definition of table
+show create table employee;
