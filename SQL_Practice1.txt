@@ -61,3 +61,25 @@ insert into employee(salary, name, id) values(2000, "suresh", 2);
 ---Insert multiple rows using single insert statement
 insert into employee values(3, "Rajesh", 3000,"2021-09-15"),(4, "Praveen", 4000,"2021-09-15"),(5, "Anudeep", 5000,"2021-09-15");
 
+
+---Use select command to query the data
+select * from employee;
+
+Integrity Constraints: Why is it used? 
+
+--- Example for Integrity Constraints
+create table if not exists employee_with_constraints
+(
+    id int NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    salary DOUBLE,
+    hiring_date DATE DEFAULT '2021-01-01',
+    UNIQUE(id),
+    CHECK(salary>1000)
+    );
+
+    ---Example 1 for Integrity Constraints failure
+    insert into employee_with_constraints values (null, "Rajesh", 3000,"2021-09-15")
+---Exception will be thrown -> Column 'id' cannot be NULL
+
+---Example 2 for Integrity Constraints failure
