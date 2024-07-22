@@ -35,3 +35,29 @@ show tables;
 
 ---If table already exists, to check the definition of table
 show create table employee;
+
+---Command to delete the TABLE
+drop table employee;
+
+---Create a Table Command
+create table if not exists employee
+(
+    id int,
+    name VARCHAR(50),
+    salary DOUBLE,
+    hiring_date DATE
+);
+
+---Syntax1 to insert data in the table
+insert into employee values(1, "nagesh", 1000, "2021-09-15");
+
+
+---This statement will fail to execute because the columns in table doesn't match values inserted
+insert into employee values(2, "suresh", "2021-09-15");
+
+---Syntax2 to insert data in the table
+insert into employee(salary, name, id) values(2000, "suresh", 2);
+
+---Insert multiple rows using single insert statement
+insert into employee values(3, "Rajesh", 3000,"2021-09-15"),(4, "Praveen", 4000,"2021-09-15"),(5, "Anudeep", 5000,"2021-09-15");
+
